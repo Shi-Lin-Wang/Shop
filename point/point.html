@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>查看點數</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../orderWithIOTA/css/order.css" rel="stylesheet">
+    <!--JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="point.js"></script>
+	<script src="../public/showCartAmount.js"></script>
+  </head>
+  <body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-large w3-animate-left" style="display:none;z-index:2;width:20%;min-width:150px" id="mySidebar">
+
+
+    <i onclick="w3_close()" class="fa fa-remove w3-button w3-display-topright"></i>
+
+    <br><br>
+	<div style="text-align:center;"><img src="../imgs/LOGO4.png" style="width:100px; margin-top:-12px;"></div>
+	<br>
+
+	<button onclick="return myAccFunc(this);" class="btn btn-link w3-block w3-white w3-left-align" id="user" value="1" style="display:inline;"></button>
+	<div name="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium" id="demoAcc1">
+		<a href="#" class="w3-bar-item w3-button" onclick="window.location = '../personalInfo.html';">個人資訊</a>
+		<a href="#" class="w3-bar-item w3-button" id="navPoint">點數</a>
+		<a href="https://wtlab.ddns.net\wtlab108\viewCard\view.html" class="w3-bar-item w3-button" >名片</a>
+	</div>
+
+	<button onclick="return myAccFunc(this);" class="btn btn-link w3-block w3-white w3-left-align" id="cart" value="2" style="display:inline;"></button>
+	<div name="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium" id="demoAcc2">
+		<a href="../orderWithIOTA/cart.php?storeID=1" class="w3-bar-item w3-button"><span class="glyphicon glyphicon-shopping-cart" style="display:inline;"></span>&nbsp 我們家 & Starbox 冷飲站</a>
+		<a href="../orderWithIOTA/cart.php?storeID=0" class="w3-bar-item w3-button"><span class="glyphicon glyphicon-shopping-cart" style="display:inline;"></span>&nbsp Super WTLab's Shop</a>
+	</div>
+
+	<a href="../orderWithIOTA/viewOrder.html" class="w3-bar-item w3-button"><span class="glyphicon glyphicon-list-alt" style="display:inline;"></span>&nbsp 查看購買紀錄</a>
+
+	<button onclick="return myAccFunc(this);" class="btn btn-link w3-block w3-white w3-left-align" value="3" style="display:inline;"><span class="glyphicon glyphicon-home" style="display:inline;"></span> &nbsp SHOP <i class='fa fa-caret-down'></i></button>
+	<div name="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium" id="demoAcc3">
+		<a href="../testChing/browserProducts/browserProduct.html?shopID=1" class="w3-bar-item w3-button"><span class="glyphicon glyphicon-home" style="display:inline;"></span>&nbsp 我們家 & Starbox 冷飲站</a>
+		<a href="../testChing/browserProducts/browserProduct.html?shopID=0" class="w3-bar-item w3-button"><span class="glyphicon glyphicon-home" style="display:inline;"></span>&nbsp Super WTLab's Shop</a>
+	</div>
+
+
+	<a data-toggle="tab" class="w3-bar-item w3-button" onclick="logout();"><span class="glyphicon glyphicon-log-out"></span> 登出</a>
+
+</nav>
+
+	<!-- Top menu -->
+	<div class="w3-top">
+	  <div class="w3-black w3-xlarge" style="max-width:1200px;margin:auto">
+		<div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+		<div class="w3-right w3-padding-16 user" id="navRight"></div>
+		<div class="w3-center w3-padding-16"><img src="../imgs/LOGO4.png" style="width:40px; margin-top:-12px;">&nbsp My Shop</div>
+	  </div>
+	</div>
+
+	<br><br><br><br>
+    <div class="container" id="pointTitle">
+
+    </div>
+    <div class="container" id="pointTable">
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>修改</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./modifyJS.js"></script>
+</head>
+<body>
+	  <!-- NAV BAR -->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			  <div class="navbar-header">
+			    <a class="navbar-brand" href="#"><img src="./imgs/LOGO4.png" style="width:40px; margin-top:-12px;"></a>
+			  </div>
+			  <ul class="nav navbar-nav">
+			    <li class="active"><a href="#">Home</a></li>
+			    <li class="dropdown">
+			      <a class="dropdown-toggle" data-toggle="dropdown" href="#">卡片類<span class="caret"></span></a>
+			      <ul class="dropdown-menu">
+				      <li><a href="https://wtlab.ddns.net\wtlab108\viewCard\view.html">名片</a></li>
+				      <li><a href="..\testChing\browserProducts\browserProduct.html">商店A</a></li>
+				      <li><a href="#">卡片2</a></li>
+			      </ul>
+				  </li>
+				  <li><a href="../orderWithIOTA/cart.html">購物車</a></li>
+				  <li><a href="#">Page 2</a></li>
+				  <li><a href="#">Page 3</a></li>
+			  </ul>
+		  	<ul class="nav navbar-nav navbar-right">
+          <li><a data-toggle="tab" onclick="window.location = '../../personalInfo.html';"><span class="glyphicon glyphicon-user" id="user"></span></a></li>
+				  <li><a data-toggle="tab" onclick="logout();"><span class="glyphicon glyphicon-log-out"></span> 登出</a></li>
+        </ul>
+		  </div>
+    </nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="container col-md-7 col-md-offset-3" style="text-align:center;">
+      <form method="post" action="./modifyTmp.php" id="myForm">
+	  <input type="hidden" name="modifyName" id="modifyName">
+			<br/>
+			<br/>
+			<br/>
+				<table id="ta" class="table table-hover" style="width:500px;">
+				  <tbody>
+					<tr>
+					  <td><label for="name">姓名：</label></td>
+					  <td><input type="text" class="form-control" name="name" id="name" required="required" style="width:350px;"></td>
+					</tr>
+					<tr>
+					  <td><label for="position">職位：</label></td>
+					  <td><input type="text" class="form-control" name="position" id="position" required="required" style="width:350px; id='position'"></td>
+					</tr>
+					<tr>
+					  <td><label for="company">所在單位：</label></td>
+					  <td><input type="text" class="form-control" name="company" id="company" required="required" style="width:350px; id='company'"></td>
+					</tr>
+					<tr>
+					  <td><label for="email">Gmail：</label></td>
+					  <td><input type="email" class="form-control" name="email" id="email" required="required" style="width:350px; id='email' "></td>
+					</tr>
+					<tr>
+					  <td><label for="tel">行動電話：</label></td>
+					  <td><input type="text" class="form-control" name="phone" id="phone" required="required" style="width:350px; id='tel'"></td>
+					</tr>
+					<tr>
+					  <td><label for="address">公司地址：</label></td>
+					  <td><input type="text" class="form-control" name="address" id="address" required="required" style="width:350px; id='address'"></td>
+					</tr>
+					<tr>
+					  <td><label for="companyTel">公司電話：</label></td>
+					  <td><input type="text" class="form-control" name="companyTel" id="companyTel" required="required" style="width:350px; id='companyTel'"></td>
+					</tr>
+					<tr>
+					  <td><label for="fax">傳真：</label></td>
+					  <td><input type="text" class="form-control" name="fax" id="fax" required="required" style="width:350px; id='fax'"></td>
+					</tr>
+					<tr>
+					<td colspan="2"><button type="submit" class="btn btn-default" style="width:80px; background-color:#f6f6f6;">修改</button></td>
+					</tr>
+				  </tbody>
+				</table>
+
+				<br/>
+				<br/>
+		</form>
+    </div>
+
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>版權所有 © WTLAB</p>
+</footer>
+
+</body>
+</html>

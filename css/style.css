@@ -1,0 +1,50 @@
+body{
+	font-family:'微软雅黑';
+}
+.card{
+	width:420px;
+	height:275px;
+	background:#fff url(../imgs/cardBG.png);
+	background-size: cover;
+	border-width:0.5px;
+	border-radius:15px;
+	border-style:solid;
+	border-color:#409CDD;
+
+	position: absolute;     /*絕對位置*/
+	top: 30%;               /*從上面開始算，下推 50% (一半) 的位置*/
+	left: 50%;              /*從左邊開始算，右推 50% (一半) 的位置*/
+	margin-top: 60px;     /*高度的一半*/
+	margin-left: -200px;    /*寬度的一半*/
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.row.content {height: 417.5px}
+
+.sidenav {
+	padding-top: 20px;
+		background-color: #f1f1f1;
+		height: 100%;
+}
+
+footer {
+	background-color: #555;
+	color: white;
+	/*
+	width: 100%;
+	position: absolute;
+	bottom: 0px; left: 0;
+	*/
+	padding: 15px;
+}
+@media screen and (max-width: 767px) {
+		.sidenav {
+			height: auto;
+			padding: 15px;
+		}
+		  .row.content {height:auto;}
+}

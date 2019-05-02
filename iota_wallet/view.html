@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In</title>
+    <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!--google icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!--JavaScript-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="view.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <br/><br/>
+      <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td colspan="3" align="center"><h3>Wallet</h3></td>
+          </tr>
+          <tr>
+            <td><label for="seed">Seed：</label></td>
+            <td><p id="seed"></p></td>
+          </tr>
+          <tr>
+            <td><label for="balance">餘額：</label></td>
+            <td><p id="balance"></p></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address：</label></td>
+            <td><p id="address"></p></td>
+          </tr>
+        </tbody>
+      </table><hr>
+
+      <br/><br/>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>編號..</th>
+            <th>狀態</th>
+            <th>價格</th>
+            <th>訊息</th>
+          </tr>
+        </thead>
+        <tbody id="transaction">
+        </tbody>
+      </table><hr>
+    </div> <!-- /container -->
+  </body>
+</html>

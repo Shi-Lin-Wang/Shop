@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In</title>
+    <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!--google icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+    <!--JavaScript-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="iotaTranscation.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-signin" action="http://wtlab.ddns.net:3000/iotaWalletTest" method="GET">
+        <h2 class="form-signin-heading">IOTA_Wallet</h2>
+        <div class="form-div">
+          <i class="material-icons">person</i>
+          <input type="text" class="form-control form-singin-input" id="seed" name="seed"  placeholder="Seed" required autofocus>
+        </div>
+        <div class="form-div">
+          <input type="submit" class="btn btn-lg btn-primary btn-block " value="LOG IN" ></input>
+        </div>
+      </form>
+    </div> <!-- /container -->
+  </body>
+</html>

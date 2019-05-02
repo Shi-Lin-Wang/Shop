@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>註冊成功_Seed頁面</title>
+    <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!--google icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="newSeedPage.js"></script>
+
+  </head>
+  <body onload="index()">
+
+    <div class="container">
+      </br>
+      <div class="card">
+        <h5 class="card-header">Your Seed</h5>
+        <div class="card-body">
+          <p class="card-text" id="seed">種子產生中</p>
+          <h5 class="card-title"><font color="red"><strong>↑這是您的Seed，在本網站中使用IOTA進行交易，以下幾點注意事項請仔細閱讀：</strong></font></h5>
+          <ol>
+            <li class="card-title">Seed是IOTA帳戶中作為唯一的認證機制</li>
+            <li class="card-title">本網站會儲存Seed，但僅做於交易的資料儲存，不作任何其他使用</li>
+            <li class="card-title">此Seed可以使用在IOTA做交易，但本網站不推薦</li>
+            <li class="card-title">我們會提供一個txt供下載</li>
+          </ol>
+
+          <a id='save' href="#" class="btn btn-success">回到登入畫面</a>
+          <a id='DLButton' href="#" class="btn btn-primary" download="seed">下載txt檔</a>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+  </body>
+</html>
